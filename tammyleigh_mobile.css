@@ -26,7 +26,7 @@ body {
 
 .gmap {
 	position:absolute;
-	top: 25%;left: 22%;
+	top: 25%;left: 9%;
 }
 
 .nails1 {
@@ -38,8 +38,15 @@ body {
 
 .nails2{
 	position: absolute; 
-	width: 30%; 
-	top: 39%; left:15%; 
+	width: 40%; 
+	top: 5%; left:-18%; 
+	border-radius: 4em;
+}
+
+.nails3{
+	position: absolute; 
+	width: 40%; 
+	top: 5%; left:80%; 
 	border-radius: 4em;
 }
 
@@ -47,14 +54,15 @@ body {
 	width: 30%; 
 	text-align: center; 
 	margin: auto;
+	margin-left: 31%; margin-top: -5%;
 }
 
 button {
-	width: 100%;
+	width: 130%;
 	background-color: white; 
 	border: none; 
 	border-radius: 2em;
 	font-family: "Neon80s";
-	font-size: 150%;
+	font-size: 200%;
 }
 

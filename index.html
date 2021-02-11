@@ -12,8 +12,8 @@
 		<div class="buttons">
 			<br><br><br><br><br><br>
 			<button><h2>SCHEDULE APPOINTMENT</h2></button><br><br><br><br>
-			<button style="width: 70%;"><h2>Contact</h2></button><br><br><br><br>
-			<button style="width: 70%;"><h2>Gallery</h2></button><br><br><br><br>
+			<button><h2>Contact</h2></button><br><br><br><br>
+			<button><h2>Gallery</h2></button><br><br><br><br>
 		</div>
 		<div class="gmap">
 			<iframe style="border-radius: 3em;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d183.43980332625358!2d-71.38342508370509!3d42.63937867426719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3bb54a47aa1e7%3A0xc790538cfb939d39!2s21%20Vinal%20Square%2C%20North%20Chelmsford%2C%20MA%2001863!5e0!3m2!1sen!2sus!4v1613020551436!5m2!1sen!2sus" width="550" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -24,7 +24,16 @@
 			console.log("MOBILE");    
 			
 			var stylesheet = document.getElementsByTagName('link')[0]; 
-  			stylesheet.setAttribute('href', 'tammyleigh_mobile.css');                    
+  			stylesheet.setAttribute('href', 'tammyleigh_mobile.css');  
+
+  			var gmap = document.getElementsByTagName('iframe')[0];  
+  			gmap.setAttribute('width', '800');    
+  			gmap.setAttribute('height', '650');        
+
+  			var img = document.createElement('img');
+  			img.setAttribute('src', 'nails2.jpg');
+  			img.setAttribute('class', 'nails3');
+  			document.body.append(img);
 		}
 		else {
 			console.log("DESKTOP");
